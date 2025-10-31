@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      American Forestry and Environmental Foundation | Sustaining Forests. Enriching Futures.
+    </title>
+    <meta
+      name="description"
+      content="American Forestry and Environmental Foundation (AFEF) restores forests, advances climate-smart practices, and empowers communities through education, research, and volunteer action."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="American Forestry and Environmental Foundation" />
+    <meta
+      property="og:description"
+      content="Join American Forestry and Environmental Foundation in restoring forests, protecting ecosystems, and educating communities for a climate-positive future."
+    />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" />
+    <meta property="og:url" content="https://www.afef.net" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --deep-green: #1f4730;
+        --mid-green: #2d6a46;
+        --leaf: #74b36f;
+        --sage: #e5f1e6;
+        --earth: #9c7c57;
+        --charcoal: #1b1f1a;
+        --cloud: #f6f6f2;
+        --text-primary: #1d1d1d;
+        --text-muted: rgba(29, 29, 29, 0.68);
+        --max-width: 1120px;
+        --shadow-soft: 0 22px 45px rgba(31, 71, 48, 0.18);
+        font-size: 16px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Work Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--text-primary);
+        background: var(--cloud);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(246, 246, 242, 0.88);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(31, 71, 48, 0.08);
+      }
+
+      .nav {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 1.25rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        color: var(--deep-green);
+      }
+
+      .logo span {
+        display: inline-block;
+        padding: 0.4rem 0.75rem;
+        background: var(--deep-green);
+        color: #fff;
+        border-radius: 999px;
+        font-size: 0.92rem;
+        letter-spacing: 0.12em;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        font-weight: 500;
+        font-size: 0.95rem;
+        color: var(--text-muted);
+      }
+
+      .nav-links a:hover {
+        color: var(--mid-green);
+      }
+
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.65rem 1.6rem;
+        background: var(--mid-green);
+        color: #fff;
+        border-radius: 999px;
+        font-weight: 600;
+        box-shadow: 0 10px 25px rgba(45, 106, 70, 0.25);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .nav-cta:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 14px 30px rgba(45, 106, 70, 0.3);
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(31, 71, 48, 0.82), rgba(29, 29, 29, 0.5)),
+          url("forest-1.jpg") center / cover no-repeat;
+        filter: saturate(1.05);
+        z-index: -2;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 20% 20%, rgba(116, 179, 111, 0.32), transparent 55%);
+        z-index: -1;
+      }
+
+      .hero-content {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 6.5rem 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 3rem;
+        align-items: center;
+        color: #fff;
+      }
+
+      .hero-lede h1 {
+        font-family: "Libre Baskerville", serif;
+        font-size: clamp(2.8rem, 5vw, 3.9rem);
+        letter-spacing: 0.02em;
+        margin: 0 0 1.5rem;
+      }
+
+      .hero-lede h1 span {
+        display: inline-block;
+        padding: 0.2rem 0.55rem;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 0.5rem;
+        margin-top: 0.75rem;
+        font-size: 0.5em;
+        letter-spacing: 0.16em;
+      }
+
+      .hero-lede p {
+        margin: 0 0 2.5rem;
+        font-size: 1.1rem;
+        max-width: 540px;
+        color: rgba(255, 255, 255, 0.88);
+        line-height: 1.8;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.9rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      }
+
+      .button.primary {
+        background: var(--leaf);
+        color: var(--deep-green);
+        box-shadow: 0 12px 30px rgba(116, 179, 111, 0.35);
+      }
+
+      .button.primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 36px rgba(116, 179, 111, 0.44);
+      }
+
+      .button.secondary {
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+      }
+
+      .button.secondary:hover {
+        background: rgba(255, 255, 255, 0.22);
+        transform: translateY(-2px);
+      }
+
+      .hero-card {
+        background: rgba(246, 246, 242, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 1.2rem;
+        padding: 2.5rem 2rem;
+        backdrop-filter: blur(6px);
+        box-shadow: 0 35px 60px rgba(0, 0, 0, 0.18);
+      }
+
+      .hero-card h2 {
+        margin: 0 0 1.25rem;
+        font-size: 1.7rem;
+        font-family: "Libre Baskerville", serif;
+      }
+
+      .hero-card ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 1.1rem;
+      }
+
+      .hero-card li {
+        padding-left: 1.75rem;
+        position: relative;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      .hero-card li::before {
+        content: "";
+        width: 0.55rem;
+        height: 0.55rem;
+        border-radius: 50%;
+        background: var(--leaf);
+        position: absolute;
+        top: 0.45rem;
+        left: 0.35rem;
+        box-shadow: 0 0 0 6px rgba(116, 179, 111, 0.2);
+      }
+
+      section {
+        margin: 0;
+        padding: 5.5rem 1.5rem;
+      }
+
+      .section-heading {
+        max-width: var(--max-width);
+        margin: 0 auto 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .section-heading h2 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-family: "Libre Baskerville", serif;
+        color: var(--deep-green);
+      }
+
+      .section-heading p {
+        margin: 0;
+        flex: 1;
+        min-width: 240px;
+        font-size: 1.05rem;
+        color: var(--text-muted);
+        line-height: 1.75;
+      }
+
+      .stats {
+        background: var(--sage);
+        position: relative;
+      }
+
+      .stats::after {
+        content: "";
+        position: absolute;
+        inset: 8% 4%;
+        border: 1px solid rgba(45, 106, 70, 0.12);
+        border-radius: 1.75rem;
+        pointer-events: none;
+      }
+
+      .stats-grid {
+        position: relative;
+        z-index: 1;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2.5rem;
+        text-align: center;
+      }
+
+      .stat-card {
+        background: #fff;
+        padding: 2.75rem 2rem;
+        border-radius: 1.4rem;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .stat-card strong {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: var(--deep-green);
+        font-family: "Libre Baskerville", serif;
+      }
+
+      .stat-card span {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .programs {
+        background: #fff;
+      }
+
+      .program-grid {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+      }
+
+      .program-card {
+        background: var(--sage);
+        padding: 2.4rem 2rem;
+        border-radius: 1.35rem;
+        border: 1px solid rgba(45, 106, 70, 0.08);
+        display: grid;
+        gap: 1.2rem;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .program-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 0% 0%, rgba(116, 179, 111, 0.25), transparent 65%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .program-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(31, 71, 48, 0.18);
+      }
+
+      .program-card:hover::after {
+        opacity: 1;
+      }
+
+      .program-card h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: var(--deep-green);
+        font-family: "Libre Baskerville", serif;
+      }
+
+      .program-card p {
+        margin: 0;
+        color: var(--text-muted);
+        line-height: 1.7;
+      }
+
+      .program-card ul {
+        margin: 0;
+        padding-left: 1.1rem;
+        color: var(--mid-green);
+        font-size: 0.98rem;
+      }
+
+      .impact {
+        background: var(--deep-green);
+        color: #fff;
+        position: relative;
+      }
+
+      .impact::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("forest-2.jpg") center / cover no-repeat;
+        opacity: 0.18;
+      }
+
+      .impact-content {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2.5rem;
+        align-items: start;
+      }
+
+      .impact-card {
+        background: rgba(0, 0, 0, 0.22);
+        padding: 2.35rem 2.1rem;
+        border-radius: 1.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+      }
+
+      .impact-card h3 {
+        margin: 0 0 1rem;
+        font-size: 1.35rem;
+        font-family: "Libre Baskerville", serif;
+      }
+
+      .impact-card p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.7;
+      }
+
+      .milestones {
+        display: grid;
+        gap: 1.2rem;
+        padding-left: 1rem;
+        margin: 0;
+        list-style: none;
+        position: relative;
+      }
+
+      .milestones::before {
+        content: "";
+        position: absolute;
+        top: 0.45rem;
+        left: 0.35rem;
+        width: 2px;
+        height: calc(100% - 0.9rem);
+        background: rgba(116, 179, 111, 0.5);
+      }
+
+      .milestones li {
+        position: relative;
+        padding-left: 1.5rem;
+      }
+
+      .milestones li::before {
+        content: attr(data-year);
+        position: absolute;
+        left: -0.3rem;
+        top: 0;
+        font-size: 0.85rem;
+        letter-spacing: 0.16em;
+        font-weight: 600;
+        color: rgba(116, 179, 111, 0.9);
+        transform: translateY(-0.2rem);
+      }
+
+      .milestones h4 {
+        margin: 0 0 0.4rem;
+        font-size: 1.1rem;
+        font-family: "Libre Baskerville", serif;
+      }
+
+      .milestones p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.6;
+      }
+
+      .map {
+        background: #fff;
+      }
+
+      .map-content {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      .map-panel {
+        background: #fff;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .map-panel img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .map-text h3 {
+        margin: 0 0 1.2rem;
+        font-size: 1.5rem;
+        color: var(--deep-green);
+        font-family: "Libre Baskerville", serif;
+      }
+
+      .map-text p {
+        margin: 0 0 1.5rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+      }
+
+      .map-text ul {
+        margin: 0;
+        padding-left: 1.1rem;
+        color: var(--mid-green);
+        line-height: 1.7;
+      }
+
+      .involved {
+        background: var(--sage);
+      }
+
+      .involved-content {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.8rem;
+      }
+
+      .involved-card {
+        background: #fff;
+        border-radius: 1.3rem;
+        padding: 2.2rem 1.85rem;
+        box-shadow: var(--shadow-soft);
+        border: 1px solid rgba(45, 106, 70, 0.1);
+        display: grid;
+        gap: 1rem;
+      }
+
+      .involved-card h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: var(--deep-green);
+        font-family: "Libre Baskerville", serif;
+      }
+
+      .involved-card p {
+        margin: 0;
+        color: var(--text-muted);
+        line-height: 1.65;
+      }
+
+      .newsletter {
+        background: #fff;
+      }
+
+      .newsletter-inner {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 3.2rem;
+        border-radius: 1.75rem;
+        background: linear-gradient(130deg, rgba(116, 179, 111, 0.95), rgba(45, 106, 70, 0.95));
+        color: #fff;
+        display: grid;
+        gap: 1.5rem;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .newsletter-inner h3 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-family: "Libre Baskerville", serif;
+      }
+
+      .newsletter-inner p {
+        margin: 0;
+        max-width: 540px;
+        color: rgba(255, 255, 255, 0.86);
+      }
+
+      .newsletter-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .newsletter-form input[type="email"] {
+        flex: 1;
+        min-width: 220px;
+        padding: 0.85rem 1rem;
+        border-radius: 0.9rem;
+        border: none;
+        font-size: 1rem;
+      }
+
+      .newsletter-form button {
+        border: none;
+        cursor: pointer;
+      }
+
+      footer {
+        background: var(--charcoal);
+        color: rgba(255, 255, 255, 0.82);
+        padding: 3rem 1.5rem 2rem;
+      }
+
+      .footer-grid {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2rem;
+      }
+
+      .footer-column h4 {
+        margin: 0 0 1rem;
+        font-size: 1.1rem;
+        font-family: "Libre Baskerville", serif;
+        color: #fff;
+      }
+
+      .footer-column ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 0.6rem;
+      }
+
+      .footer-column ul a {
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .footer-column ul a:hover {
+        color: var(--leaf);
+      }
+
+      .footer-bottom {
+        max-width: var(--max-width);
+        margin: 2.5rem auto 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      @media (max-width: 960px) {
+        .nav {
+          flex-wrap: wrap;
+        }
+
+        .nav-links {
+          order: 3;
+          width: 100%;
+          justify-content: center;
+        }
+
+        .nav-cta {
+          order: 2;
+        }
+
+        .hero-content {
+          padding: 5rem 1.5rem;
+        }
+
+        .newsletter-inner {
+          padding: 2.5rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        header {
+          position: static;
+        }
+
+        .hero-content {
+          padding: 4.5rem 1.1rem;
+        }
+
+        .hero-lede p {
+          font-size: 1rem;
+        }
+
+        .section-heading {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .stats::after {
+          display: none;
+        }
+
+        .newsletter-form {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a class="logo" href="#top">
+          <span>AFEF</span>
+          <div>
+            American Forestry<br />
+            &amp; Environmental Foundation
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="#programs">Programs</a>
+          <a href="#impact">Impact</a>
+          <a href="#involved">Get Involved</a>
+          <a href="#resources">Resources</a>
+        </nav>
+        <a class="nav-cta" href="#donate">Donate</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <div class="hero-lede">
+            <h1>
+              Restoring Forests,<br />
+              Empowering Communities.<br />
+              <span>Sustaining Forests. Enriching Futures.</span>
+            </h1>
+            <p>
+              American Forestry and Environmental Foundation (AFEF) drives climate-smart forestry projects, community
+              education, and research that protect biodiversity while delivering measurable carbon benefits. We work with
+              landowners, educators, and corporate partners to ensure forests thrive for generations.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#donate">Donate Today</a>
+              <a class="button secondary" href="#involved">Volunteer</a>
+              <a class="button secondary" href="#programs">Explore Programs</a>
+            </div>
+          </div>
+          <aside class="hero-card">
+            <h2>Our 2030 Impact Roadmap</h2>
+            <ul>
+              <li>Plant 10 million native trees across reforestation corridors.</li>
+              <li>Advance equitable carbon credits that uplift rural landowners.</li>
+              <li>Equip 500 schools with climate literacy programs and curriculum.</li>
+              <li>Protect 250,000 acres of biodiverse habitat through partnerships.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="stats" id="impact">
+        <div class="section-heading">
+          <h2>Impact That Scales With Nature</h2>
+          <p>
+            Every project is grounded in science, community voice, and long-term stewardship. Explore the growth we have
+            achieved together with donors, volunteers, and partners.
+          </p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <strong>3.6M</strong>
+            <span>Trees planted since 2016</span>
+          </article>
+          <article class="stat-card">
+            <strong>82</strong>
+            <span>Community partners engaged</span>
+          </article>
+          <article class="stat-card">
+            <strong>19</strong>
+            <span>States with active projects</span>
+          </article>
+          <article class="stat-card">
+            <strong>1.4M</strong>
+            <span>Tons of CO₂e sequestered</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="programs" id="programs">
+        <div class="section-heading">
+          <h2>Programs Rooted In Results</h2>
+          <p>
+            From hands-in-the-soil restoration to research-backed climate solutions, our programs connect people,
+            policy, and the planet.
+          </p>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <h3>Reforestation &amp; Tree Planting</h3>
+            <p>
+              Strategic reforestation projects rebuild climate-resilient forests with native species, tackling erosion,
+              wildfire recovery, and habitat loss.
+            </p>
+            <ul>
+              <li>Community-led planting events</li>
+              <li>Indigenous stewardship partnerships</li>
+              <li>Forest health monitoring</li>
+            </ul>
+          </article>
+          <article class="program-card">
+            <h3>Carbon Smart Forestry</h3>
+            <p>
+              We expand access to high-quality carbon credits that reward sustainable forest management, especially for
+              small landowners.
+            </p>
+            <ul>
+              <li>Verified carbon accounting</li>
+              <li>Revenue sharing with land stewards</li>
+              <li>Corporate decarbonization pathways</li>
+            </ul>
+          </article>
+          <article class="program-card">
+            <h3>Research &amp; Innovation</h3>
+            <p>
+              Our research team develops data tools and pilot projects that inform national policy and accelerate
+              climate resilience.
+            </p>
+            <ul>
+              <li>Forest carbon modeling</li>
+              <li>Climate risk assessments</li>
+              <li>Open-access datasets</li>
+            </ul>
+          </article>
+          <article class="program-card">
+            <h3>Education &amp; Outreach</h3>
+            <p>
+              Climate literacy starts locally. Our educators bring curricula, storytelling, and skill-building into
+              classrooms and communities.
+            </p>
+            <ul>
+              <li>School partnerships and toolkits</li>
+              <li>Leadership academies for teens</li>
+              <li>Trailside interpretation programs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="impact" id="resources">
+        <div class="section-heading">
+          <h2>Stories Of Regrowth</h2>
+          <p>
+            Meet the communities turning restoration into reality. We share lessons learned, highlight voices on the
+            ground, and celebrate nature-based solutions that work.
+          </p>
+        </div>
+        <div class="impact-content">
+          <article class="impact-card">
+            <h3>Agrivoltaics In Appalachia</h3>
+            <p>
+              AFEF supported a coalition of landowners and universities exploring how solar farms and tree corridors can
+              co-exist. The project now powers 1,800 homes while restoring migratory bird habitat.
+            </p>
+          </article>
+          <article class="impact-card">
+            <h3>Indigenous Forest Guardians</h3>
+            <p>
+              In partnership with Tribal foresters, we are reconnecting youth to cultural knowledge through prescribed
+              burns, native seed collection, and elder-led storytelling.
+            </p>
+          </article>
+          <ul class="milestones">
+            <li data-year="2018">
+              <h4>Louisiana Wetland Revival</h4>
+              <p>Planting cypress and mangrove buffers to shield coastal communities from hurricanes.</p>
+            </li>
+            <li data-year="2020">
+              <h4>Urban Canopy Fellows</h4>
+              <p>Launched 12 paid fellowships to map heat islands and design neighborhood tree plans.</p>
+            </li>
+            <li data-year="2023">
+              <h4>Forest Finance Accelerator</h4>
+              <p>Created a nationwide cohort of green investors funding carbon-smart forestry startups.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="section-heading">
+          <h2>Where We Work</h2>
+          <p>
+            From coastal wetlands to highland forests, AFEF partners with local leaders to restore ecosystems and build
+            climate resilience in regions that need it most.
+          </p>
+        </div>
+        <div class="map-content">
+          <div class="map-panel">
+            <img
+              src="https://images.unsplash.com/photo-1470168916431-31070d680e76?auto=format&fit=crop&w=1200&q=80"
+              alt="Aerial view of a lush forest canopy with winding river"
+              loading="lazy"
+            />
+          </div>
+          <div class="map-text">
+            <h3>Regional Hubs</h3>
+            <p>
+              We coordinate regional hubs that deliver training, stewardship, and scientific support tailored to local
+              ecosystems and economies.
+            </p>
+            <ul>
+              <li>Pacific Northwest – wildfire recovery and carbon innovation</li>
+              <li>Southeast – longleaf pine restoration and wetland protection</li>
+              <li>Midwest – agroforestry partnerships with family farms</li>
+              <li>Mid-Atlantic – urban canopy expansion and community science</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="involved" id="involved">
+        <div class="section-heading">
+          <h2>Join A Movement That Grows</h2>
+          <p>
+            Whether you contribute time, expertise, or financial support, your involvement helps us rebuild resilient
+            forests faster.
+          </p>
+        </div>
+        <div class="involved-content">
+          <article class="involved-card" id="donate">
+            <h3>Donate To Plant And Protect</h3>
+            <p>
+              Direct your gift to reforestation, education, or research and receive impact reports that track your
+              contribution from seedling to canopy.
+            </p>
+            <a class="button primary" href="mailto:giving@afef.net?subject=AFEF%20Donation%20Inquiry">Give Now</a>
+          </article>
+          <article class="involved-card">
+            <h3>Volunteer In The Field</h3>
+            <p>
+              Join restoration days, help map forest data, or lead a youth workshop. We welcome individuals, families,
+              and corporate teams.
+            </p>
+            <a class="button secondary" href="mailto:volunteer@afef.net?subject=Volunteer%20with%20AFEF">Sign Up</a>
+          </article>
+          <article class="involved-card">
+            <h3>Partner For Climate Impact</h3>
+            <p>
+              Collaborate on carbon credit projects, sponsor school programs, or co-design sustainable supply chains with
+              our experts.
+            </p>
+            <a class="button secondary" href="mailto:partners@afef.net?subject=Partnership%20Opportunity">Start A Conversation</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-inner">
+          <div>
+            <h3>Monthly Canopy Briefing</h3>
+            <p>
+              Receive field updates, climate policy news, funding opportunities, and invitations to upcoming webinars and
+              volunteer events.
+            </p>
+          </div>
+          <form class="newsletter-form" action="#" method="post">
+            <label class="visually-hidden" for="email">Email address</label>
+            <input id="email" type="email" name="email" placeholder="Email address" required />
+            <button class="button primary" type="submit">Notify Me</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>
+            1200 Forest Way<br />
+            Portland, OR 97205<br />
+            <a href="tel:+15035551234">(503) 555-1234</a><br />
+            <a href="mailto:hello@afef.net">hello@afef.net</a>
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#programs">Our Programs</a></li>
+            <li><a href="#impact">Impact Dashboard</a></li>
+            <li><a href="#involved">Volunteer</a></li>
+            <li><a href="#donate">Donate</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Annual Reports</a></li>
+            <li><a href="#">Climate Policy Briefs</a></li>
+            <li><a href="#">Media Kit</a></li>
+            <li><a href="#">Brand Assets</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Transparency</h4>
+          <ul>
+            <li><a href="#">IRS 501(c)(3) Determination</a></li>
+            <li><a href="#">Donor Privacy Policy</a></li>
+            <li><a href="#">Impact Methodology</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; <span id="year"></span> American Forestry and Environmental Foundation. All rights reserved.</div>
+        <div>Guidestar Platinum Seal | EIN 46-7891234</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
